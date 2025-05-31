@@ -1,2 +1,2 @@
-# main_project_test
+# project_test
 main
