@@ -1,0 +1,99 @@
+
+                                        /* blog */
+.blog-section {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: sans-serif;
+}
+
+.blog-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.blog-desc {
+  font-size: 16px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+/* Grid layout cho các card */
+.blog-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-card {
+  width: 300px;
+  text-align: left;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Card hover: nâng lên + đổ bóng */
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Container ảnh */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ảnh zoom khi hover */
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .image-container img {
+  transform: scale(1.05);
+}
+
+/* Badge Insight rung nhịp nhẹ */
+.badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: navy;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  animation: pulseBadge 2s infinite;
+}
+
+@keyframes pulseBadge {
+  0%   { transform: scale(1); opacity: 1; }
+  50%  { transform: scale(1.1); opacity: 0.85; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Tiêu đề bài viết: đổi màu khi hover */
+.blog-card h3 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+  transition: color 0.3s ease;
+}
+
+.blog-card:hover h3 {
+  color: #007bff;
+}
+
+/* Đoạn trích */
+.blog-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+}
