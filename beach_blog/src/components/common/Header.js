@@ -20,26 +20,30 @@ const Header = () => {
     <header className="main-header fixed-top">
       <Navbar expand="lg" variant="dark" className="navbar">
         <Container className="justify-content-between align-items-center">
-          <Navbar.Brand href="#">Beach Blog</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">
+            <img
+              src="./images/logo.png"
+              alt="Beach Blog Logo"
+              height="40"
+              className="d-inline-block align-top me-2"
+            />{' '}
+            Beach Blog
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarNav" />
-          <Navbar.Collapse id="navbarNav" className="justify-content-between align-items-center">
-            <Nav className="gap-4">
+          <Navbar.Collapse id="navbarNav" className="align-items-center">
+            <Nav className="mx-auto gap-4 p-2">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
-              
-              <NavDropdown title="Regions" id="nav-regions-dropdown">
-                <NavDropdown.Item as={Link} to="/regions/north">Northern Beaches</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/regions/south">Southern Beaches</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/regions/east">Eastern Beaches</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/regions/west">Western Beaches</NavDropdown.Item>
+
+              <NavDropdown title="Beaches" id="nav-explore-dropdown">
+                <NavDropdown.Item as={Link} to="/regions">Regions</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/gallery">Gallery</NavDropdown.Item>
               </NavDropdown>
               
-              <Nav.Link as={Link} to="/gallery">Gallery</Nav.Link>
+              <Nav.Link as={Link} to="/hotels">Hotels</Nav.Link>
+              <Nav.Link as={Link} to="/tips">Tips</Nav.Link>
               {/* <Nav.Link as={Link} to="/about">About Us</Nav.Link>
-              <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
-              <Nav.Link as={Link} to="/feedback">Feedback</Nav.Link>
-              <Nav.Link as={Link} to="/queries">Queries</Nav.Link>
-              <Nav.Link as={Link} to="/sitemap">Sitemap</Nav.Link> */}
-          </Nav>
+              <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link> */}
+            </Nav>
 
             {/* Khối đếm số lượt truy cập */}
             <div
@@ -50,7 +54,7 @@ const Header = () => {
               <span style={{ fontWeight: "bold" }}>
                 {visitorCount.toLocaleString()}
               </span>{" "}
-              &nbsp;visitors
+              &nbsp;
             </div>
           </Navbar.Collapse>
         </Container>

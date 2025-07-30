@@ -35,7 +35,7 @@ const FindDestination = () => {
           Experience tropical elegance at BEACH BLOG.
         </h1>
 
-        <div className="input-group">
+        {/* <div className="input-group">
           <input
             type="text"
             className="form-control"
@@ -44,7 +44,7 @@ const FindDestination = () => {
           />
           <button type="submit" className="btn">Find</button>
         </div>
-          
+           */}
 
       </div>
     </section>

@@ -1,11 +1,11 @@
 .main-header {
-  background: rgba(0, 0, 0, 0.4); /* nền mờ */
+  background: #00000080; /* nền mờ */
   padding: 10px 0;
   z-index: 999;
 }
 
 .navbar-brand {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Alumni Sans Pinstripe', serif;
   font-size: 1.5rem;
   color: white;
 }
@@ -14,6 +14,8 @@
   color: white !important;
   font-size: 1rem;
   transition: color 0.3s ease;
+    font-family: 'Alumni Sans Pinstripe', serif;
+
 }
 
 .nav-link:hover {

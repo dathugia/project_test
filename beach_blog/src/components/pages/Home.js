@@ -10,8 +10,6 @@ const Home = () => {
     <>
       <FindDestination />
       <DestinationSection />
-      <OverViewSection />
-      <BlogSection />
       <FooterMarquee />
     </>
   );
