@@ -23,11 +23,11 @@ html, body {
 .hero-content {
   text-align: center;
   font-family: 'Great Vibes', cursive;
-  color: #007A74;
+  color: #06958e;
 }
 
 .animated-line {
-  font-size: 3.5rem;
+  font-size: 2.7rem;
   white-space: nowrap;
   margin: 10px 0;
 }

@@ -6,7 +6,7 @@ const FixedBackground = () => {
   return (
     <div className="fixed-background">
       <img
-        src="https://i0.wp.com/ichi-maru.com/wp-content/uploads/2020/06/cropped-AdobeStock_270431415-1-scaled-2.jpeg?w=2000&ssl=1"
+        src="https://worlds50beaches.com/assets/images/hero_bg.jpg"
         alt="background"
       />
     </div>

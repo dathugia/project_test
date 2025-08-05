@@ -3,7 +3,7 @@ import "./Welcome.css";
 const Welcome = () => {
   const lines = [
     "Welcome to Beauty Of Beaches",
-    "Experience tropical elegance in paradise"
+    "Explore the Best Beaches of the World"
   ];
 
   return (
