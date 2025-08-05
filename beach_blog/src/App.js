@@ -13,6 +13,7 @@ import Gallery from "./components/pages/Gallery";
 import Queries from "./components/pages/Queries";
 import Regions from "./components/pages/Regions";
 import Sitemap from "./components/pages/Sitemap";
+import Hotel from "./components/pages/Hotel";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/regions" element={<Regions />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/hotels" element={<Hotel />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/feedback" element={<Feedback />} />

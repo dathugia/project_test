@@ -1,41 +1,36 @@
 .main-header {
-  background: #00000080; /* nền mờ */
-  padding: 10px 0;
+  background: transparent;
   z-index: 999;
 }
 
 .navbar-brand {
-  font-family: 'Alumni Sans Pinstripe', serif;
-  font-size: 1.5rem;
+  font-family: 'Satisfy';
+  font-size: 1.5rem !important;
   color: white;
 }
 
 .nav-link {
   color: white !important;
-  font-size: 1rem;
+  font-size: 1.2rem !important;
   transition: color 0.3s ease;
-    font-family: 'Alumni Sans Pinstripe', serif;
-
+  font-family: 'Satisfy'; 
 }
 
 .nav-link:hover {
   color: #ff8c42 !important;
 }
 
-@media (max-width: 991px) {
-  .navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.85);
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .nav-link {
-    color: white !important;
-    text-align: center;
-  }
+.navbar .dropdown-toggle {
+  font-weight: 500;
+  color: white !important;
+  font-size: 1.6rem;
 }
 
-/* Làm mềm dropdown menu */
+.navbar .dropdown-toggle:hover,
+.navbar .dropdown-toggle:focus {
+  color: #ff8c42 !important;
+}
+
 .dropdown-menu {
   background-color: #ffffff;
   border-radius: 12px;
@@ -44,44 +39,51 @@
   border: none;
   min-width: 200px;
   transition: all 0.2s ease-in-out;
+  display: none;
 }
 
-/* Mỗi item trong menu */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
 .dropdown-item {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1.2rem;
   color: #333;
   transition: background-color 0.2s ease-in-out;
+  font-family: 'Satisfy';
 }
 
-/* Khi hover */
 .dropdown-item:hover {
   background-color: #e3f2fd;
-  color: #007bff;
   border-radius: 6px;
 }
 
-/* Dropdown toggle (nút "Regions") */
-.navbar .dropdown-toggle {
-  font-weight: 500;
-  color: white !important;
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #00000080;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
 }
 
-.navbar .dropdown-toggle:hover,
-.navbar .dropdown-toggle:focus {
-  color: #f8f9fa !important;
+.navbar {
+  background-color: transparent;
+  transition: all 0.4s ease;
 }
 
-/* Kích hoạt dropdown khi hover */
-.navbar .dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0; /* tránh bị nhảy */
+.navbar.scrolled {
+  background-color: #00000080 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Làm mượt và đẹp hơn */
-.navbar .dropdown-menu {
-  display: none;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease-in-out;
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .dropdown-toggle {
+  color: rgb(255, 255, 255) !important;
 }

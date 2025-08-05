@@ -1,16 +1,20 @@
-import React from "react";
-import FindDestination from "../common/FindDestination";
 import DestinationSection from "../common/DestinationSection";
-import OverViewSection from "../common/OverViewSection";
-import BlogSection from "../common/BlogSection";
 import FooterMarquee from "../common/FooterMarquee";
+import Welcome from "../common/Welcome";
+import useLenis from "../../hooks/useLenis";
+import FixedBackground from "../common/FixedBackground";
+import ImageGallery from "../common/ImageGallery";
 
 const Home = () => {
+  useLenis();
+
   return (
     <>
-      <FindDestination />
-      <DestinationSection />
-      <FooterMarquee />
+      <FixedBackground />
+        <Welcome />
+        <ImageGallery />
+        <DestinationSection />
+        <FooterMarquee />
     </>
   );
 };
